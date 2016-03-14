@@ -1,3 +1,5 @@
 from django.contrib import admin
+from pins.models import Pins, Category
 
-# Register your models here.
+admin.site.register(Pins)
+admin.site.register(Category)
