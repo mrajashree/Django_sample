@@ -1,0 +1,9 @@
+{% if pins_list %}
+    <ul>
+    {% for pin in pins_list %}
+        <li><a href="/pins/{{ pin.id }}/">{{ pin.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No pins are available.</p>
+{% endif %}
